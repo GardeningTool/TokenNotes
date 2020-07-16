@@ -1,0 +1,8 @@
+main: com.gardeningtool.TokenNotes.TokenNotes
+name: TokenNotes
+version: 1.0
+author: Gardening_Tool
+description: A token BankNotes plugin
+commands:
+  tewithdraw: 
+    description: Withdraw tokens
