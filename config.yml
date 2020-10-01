@@ -1,18 +1,20 @@
+Updater:
+  Version: "1.0.0"
+  CheckForUpdates: true
 Item:
   Type: PAPER
   Name: "&c&lToken Note"
   Lore: 
     - ""
-    - "&fWorth: [AMOUNT_COMMAS]"
-    - "&fWithdrawer: [WITHDRAWER]"
-  ItemData: 0
+    - "&fWorth: %amount_formatted%"
+    - "&fWithdrawer: %withdrawer%"
   Enchanted: false
   #Item type must be in all caps, must be as typed in the Material enum https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
   #ItemData should be a number from this list: https://minecraftitemids.com/types/dye
   #Placeholders:
-  #[WITHDRAWER] - The person who withdrew the TokenNote
-  #[AMOUNT] - The amount, no commas
-  #[AMOUNT_COMMAS] - Amount, formatted with commas
+  #%withdrawer% - The person who withdrew the TokenNote
+  #%amount% - The amount, no commas
+  #%amount_formatted% - Amount, formatted with commas
 General:
   Stackable: false
   WithdrawSyntax: "&cUsage: /tokenwithdraw (amount) [amount]"
@@ -23,8 +25,8 @@ General:
   CompletedMsg: "&cWithdrew!"
   CannotBeNegativeMsg: "&cYou can't create a negative banknote!"
   #Completed message supports the 3 placeholders mentioned above
-  AddedBalanceMsg: "&cAdded [AMOUNT_COMMAS] tokens to your balance!"
-  #Message to send when tokens are added to a player's balance, supports [AMOUNT] and [AMOUNT_COMMAS]
+  AddedBalanceMsg: "&cAdded %amount_formatted% tokens to your balance!"
+  #Message to send when tokens are added to a player's balance, supports %amount% and %amount_formatted%
   NotEnoughSpace: "&cYou don't have enough space in your inventory to do this!"
   WithdrawQuantityEnabled: true
   #WithdrawQuantityEnabled should be true if you want people to do /tokenwithdraw (amount) (quantity) instead of /tokenwithdraw (amount)
