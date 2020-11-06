@@ -24,13 +24,13 @@ public class UpdateHandler implements Listener {
 			try {
 				URL url = new URL("https://gardeningtool.dev/plugins/version/TokenNotes.txt");
 				URLConnection connection = url.openConnection();
-			    connection.addRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)");
-			    connection.connect();
+			        connection.addRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)");
+			        connection.connect();
 				BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 				String line = "";
 				while ((line = reader.readLine()) != null) {
 					if (!line.equalsIgnoreCase(config.VERSION)) {
-						event.getPlayer().sendMessage("§7[§cTokenNotes§7] A new version is available! Currently using §f" + config.VERSION + "§7!");
+						event.getPlayer().sendMessage("Â§7[Â§cTokenNotesÂ§7] A new version is available! Currently using Â§f" + config.VERSION + "Â§7!");
 						break;
 					}
 				}
