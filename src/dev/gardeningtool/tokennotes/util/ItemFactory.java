@@ -39,7 +39,7 @@ public class ItemFactory {
 	 * @description creates a new ItemStack object with the set parameters
 	 */
 	public ItemFactory(Material material, int amount, int data) {
-		this(material, amont, (byte) data);
+		this(material, amount, (byte) data);
 	}
 
 	/**
