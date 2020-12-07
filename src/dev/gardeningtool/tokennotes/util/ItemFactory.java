@@ -18,7 +18,7 @@ public class ItemFactory {
 	private int amount;
 	private Material material;
 	private ItemFlag[] flags;
-	private List<String> lore = new ArrayList<String>();
+	private List<String> lore = new ArrayList<>();
 	private ItemStack item = null;
 	
 	/**
