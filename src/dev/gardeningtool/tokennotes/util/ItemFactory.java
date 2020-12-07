@@ -28,9 +28,7 @@ public class ItemFactory {
 	 * @description creates a new ItemStack object with the set parameters
 	 */
 	public ItemFactory(Material material, int amount) {
-		this.material = material;
-		this.amount = amount;
-		item = new ItemStack(this.material, this.amount);
+		this(material, amount, 0);
 	}
 	
 	/**
@@ -41,9 +39,7 @@ public class ItemFactory {
 	 * @description creates a new ItemStack object with the set parameters
 	 */
 	public ItemFactory(Material material, int amount, int data) {
-		this.material = material;
-		this.amount = amount;
-		item = new ItemStack(this.material, this.amount, Byte.valueOf(String.valueOf(data)));
+		this(material, amont, (byte) data);
 	}
 
 	/**
