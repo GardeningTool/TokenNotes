@@ -1,4 +1,4 @@
-package dev.gardeningtool.claimablerewards.util;
+package dev.gardeningtool.tokennotes.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
